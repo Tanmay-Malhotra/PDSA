@@ -12,13 +12,12 @@ def find_first(arr,key):
 
     while (left<=right):
         mid = (left+right)//2
-        """ if arr[mid]==key:
+        if arr[mid]==key:
             fo = mid
-            right = mid - 1 """ #continue searching left of the value to find the first occurence in a sorted arr
+            right = mid - 1 #continue searching left of the value to find the first occurence in a sorted arr
 
         if arr[mid]>key:
-            fo = mid
-            right = mid
+            right = mid-1
         else:
             left = mid + 1
     
@@ -30,13 +29,11 @@ def find_last(arr,key):
 
     while(left <= right):
         mid = (left+right)//2
-        """if arr[mid]==key:
+        if arr[mid]==key:
             lo =mid
-            left = mid +1 """ # continue searching right of the value to find the last occurence in a sorted arr
-        
+            left = mid +1 # continue searching right of the value to find the last occurence in a sorted arr
         if arr[mid]>key:
-            right = mid
-            lo = mid
+            right = mid-1
         else :
             left = mid + 1
     

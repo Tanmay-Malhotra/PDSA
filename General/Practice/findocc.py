@@ -1,4 +1,4 @@
-#find occ.py to check the occurences of the number in a sorted string 
+#find occ.py to check the occurences of the number in a sorted array
 
 # use two functions 
 # one to find the first occurence 
